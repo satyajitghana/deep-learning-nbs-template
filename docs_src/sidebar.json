@@ -1,6 +1,8 @@
 {
-  "nbdev_template": {
+  "nbs_template": {
     "Overview": "/",
-    "module name here": "/core"
+    "CIFAR10": "/data.cifar",
+    "Dummy Model": "/model.dummy",
+    "Module": "/template_nb"
   }
 }

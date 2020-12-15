@@ -10,9 +10,15 @@ entries:
       title: Overview
       url: /
     - output: web,pdf
-      title: module name here
-      url: /core
+      title: CIFAR10
+      url: /data.cifar
+    - output: web,pdf
+      title: Dummy Model
+      url: /model.dummy
+    - output: web,pdf
+      title: Module
+      url: /template_nb
     output: web
-    title: nbdev_template
+    title: nbs_template
   output: web
   title: Sidebar
