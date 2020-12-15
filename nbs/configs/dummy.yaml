@@ -1,0 +1,18 @@
+model_config:
+  _target_: nbs_template.model.dummy.DummyModel
+  channels: 3
+  width: 32
+  height: 32
+  num_classes: 10
+  hidden_size: 32
+  learning_rate: 0.0002
+dm_config:
+  type: nbs_template.data.cifar.CIFAR10DataModule
+  transform:
+  - A.Resize(32, 32)
+  - A.Normalize(mean=CIFAR10.mean, std=CIFAR10.std)
+  - AT.ToTensor()
+trainer_config:
+  _target_: pytorch_lightning.Trainer
+  max_epochs: 1
+  progress_bar_refresh_rate: 20
